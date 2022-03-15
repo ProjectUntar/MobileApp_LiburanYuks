@@ -30,14 +30,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2,
-      children: [
-        ObjectItem(object: objects[0]),
-        ObjectItem(object: objects[1]),
-        ObjectItem(object: objects[2]),
-        ObjectItem(object: objects[3]),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+      child: GridView.count(
+        crossAxisCount: 2,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 10,
+        padding: const EdgeInsets.all(4),
+        childAspectRatio: 0.72,
+        children: objects.map<Widget>((Object p) {
+          return ObjectItem(object: p);
+        }).toList(),
+      ),
     );
   }
 }
