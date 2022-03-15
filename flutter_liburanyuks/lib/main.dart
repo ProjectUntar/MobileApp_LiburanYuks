@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/login.dart';
+
 import 'screens/main_screen.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Liburan Yuks!',
       theme: appThemeData,
-      home: LoginPage(),
+      home: const MainScreen(),
     );
   }
 }

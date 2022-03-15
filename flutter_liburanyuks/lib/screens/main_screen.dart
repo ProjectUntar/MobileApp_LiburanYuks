@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home/HDes_screen.dart';
-import 'profile/user.dart';
-// @dart=2.9
+import 'home/home.screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
 
@@ -22,11 +21,11 @@ class _MainScreenState extends State<MainScreen> {
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.badge_outlined), label: 'Pass'),
-            BottomNavigationBarItem(icon: Icon(Icons.beach_access_rounded), label: 'Destination'),
-            BottomNavigationBarItem(icon: Icon(Icons.attractions_outlined), label: 'Amusement'),
-            BottomNavigationBarItem(icon: Icon(Icons.brunch_dining), label: 'Cuisine'),
-            BottomNavigationBarItem(icon: Icon(Icons.airline_seat_individual_suite_outlined), label: 'Lodging'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           ],
           currentIndex: _selectedTabIndex,
           type: BottomNavigationBarType.fixed,
@@ -42,8 +41,8 @@ class _MainScreenState extends State<MainScreen> {
         body: IndexedStack(
           index: _selectedTabIndex,
           children: [
-            Profile(),
-            HotDestination(),
+            HomeScreen(),
+            Container(),
             Container(),
             Container(),
             Container(),

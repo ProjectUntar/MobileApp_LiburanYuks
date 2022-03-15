@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_liburanyuks/screens/home/object_item.dart';
 import '/models/object.dart';
 
-class HotDestination extends StatelessWidget {
-  HotDestination({Key? key}) : super(key: key);
+class HomeScreen extends StatelessWidget {
+  HomeScreen({Key? key}) : super(key: key);
 
   List<Object> objects = [
     Object(

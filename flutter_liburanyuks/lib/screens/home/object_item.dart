@@ -17,7 +17,6 @@ class ObjectItem extends StatelessWidget {
             color: Colors.white,
             borderRadius: const BorderRadius.all(Radius.circular(15)),
             boxShadow: [
-
               BoxShadow(
                 blurRadius: 2,
                 color: Colors.black.withOpacity(0.15),
@@ -29,7 +28,7 @@ class ObjectItem extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                height: constraints.maxHeight *0.6,
+                height: constraints.maxHeight * 0.75,
                 width: constraints.maxWidth,
                 child: ClipRRect(
                   borderRadius: const BorderRadius.only(
@@ -40,35 +39,22 @@ class ObjectItem extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 4, right: 6, top: 4, bottom: 15),
+                padding: const EdgeInsets.only(left: 2, right: 6, top: 2),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [ 
-                        Expanded(
-                          child:Text(
-                            object.name,
-                            textAlign: TextAlign.left,
-                            style: const TextStyle(
-                              fontSize: 17,
-                            ),
-                          ),
-                        ), 
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Icon(
-                            Icons.favorite_border,
-                            size: 25, color: Colors.red
-                          ),
-                        ),
+                      children: [
+                        Text(object.name, style: const TextStyle(fontSize: 15)),
+                        Icon(Icons.favorite_border,
+                            size: 16, color: Colors.red),
                       ],
-                    ),  
-                                   
-                  ],               
+                    ),
+                    Text(object.gist, style: const TextStyle(fontSize: 11)),
+                  ],
                 ),
-              ),
+              )
             ],
           ),
         );
