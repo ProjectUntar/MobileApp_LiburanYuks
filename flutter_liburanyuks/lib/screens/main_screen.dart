@@ -45,10 +45,10 @@ class _MainScreenState extends State<MainScreen> {
           index: _selectedTabIndex,
           children: [
             HomeScreen(),
-            Container(),
-            Container(),
-            Container(),
-            Container(),
+            Center(child: Text('Destination')),
+            Center(child: Text('Cuisine')),
+            Center(child: Text('Entertainment')),
+            Center(child: Text('Lodging')),
           ],
         ));
   }
