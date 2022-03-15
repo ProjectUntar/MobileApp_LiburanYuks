@@ -22,10 +22,13 @@ class _MainScreenState extends State<MainScreen> {
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.place), label: 'Destination'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.fastfood), label: 'Cuisine'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.landscape), label: 'Entertainment'),
+            BottomNavigationBarItem(icon: Icon(Icons.hotel), label: 'Lodging'),
           ],
           currentIndex: _selectedTabIndex,
           type: BottomNavigationBarType.fixed,
