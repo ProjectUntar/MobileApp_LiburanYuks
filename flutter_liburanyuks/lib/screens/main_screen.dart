@@ -42,11 +42,11 @@ class _MainScreenState extends State<MainScreen> {
         body: IndexedStack(
           index: _selectedTabIndex,
           children: [
-            Profile(),
-            HotDestination(),
-            Container(),
-            Container(),
-            Container(),
+            HomeScreen(),
+            Center(child: Text('Destination')),
+            Center(child: Text('Cuisine')),
+            Center(child: Text('Entertainment')),
+            Center(child: Text('Lodging')),
           ],
         ));
   }
