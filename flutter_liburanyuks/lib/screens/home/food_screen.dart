@@ -9,7 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Recipe> _recipes;
+  late List<Recipe> _recipes;
   bool _isLoading = true;
 
   @override
