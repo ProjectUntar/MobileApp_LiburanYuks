@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appThemeData = ThemeData(
-      primarySwatch: Colors.orange,
-      primaryColor: Colors.white,
+      primarySwatch: Colors.blue,
+      primaryColor: Colors.blue,
       bottomAppBarColor: Colors.white,
       scaffoldBackgroundColor: Colors.grey[100],
       visualDensity: VisualDensity.adaptivePlatformDensity,

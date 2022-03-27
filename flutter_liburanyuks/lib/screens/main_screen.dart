@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home/HDes_screen.dart';
+import 'home/Menu_screen.dart';
 import 'home/food_screen.dart';
 import 'profile/user.dart';
 
@@ -17,11 +17,6 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Liburan Yuks!'),
-          backgroundColor: Colors.white,
-          elevation: 5,
-        ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(
@@ -38,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
           ],
           currentIndex: _selectedTabIndex,
           type: BottomNavigationBarType.fixed,
-          elevation: 5,
+          elevation: 10,
           unselectedItemColor: Colors.grey,
           showUnselectedLabels: false,
           onTap: (index) {
@@ -51,10 +46,10 @@ class _MainScreenState extends State<MainScreen> {
           index: _selectedTabIndex,
           children: [
             Profile(),
-            Center(child: Text('Destination')),
-            Center(child: Text('Amusement')),
+            HotDestination(),
+            Entertainment(),
             HomePage(),
-            Center(child: Text('Lodging')),
+            Lodging(),
           ],
         ));
   }
