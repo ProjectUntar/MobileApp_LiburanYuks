@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_liburanyuks/screens/meals_screen.dart';
+import 'package:flutter_liburanyuks/screens/recipe_screen.dart';
+import 'package:flutter_liburanyuks/screens/search_screen.dart';
 import 'home/Menu_screen.dart';
-import 'home/food_screen.dart';
 import 'profile/user.dart';
 
 // @dart=2.9
@@ -48,7 +50,7 @@ class _MainScreenState extends State<MainScreen> {
             Profile(),
             HotDestination(),
             Entertainment(),
-            HomePage(),
+            SearchScreen(),
             Lodging(),
           ],
         ));

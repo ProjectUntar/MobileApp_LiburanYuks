@@ -32,23 +32,25 @@ class HotDestination extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Destination',),
-          backgroundColor: Color.fromARGB(255, 0, 191, 255),
-          elevation: 5,
+        title: const Text(
+          'Destination',
         ),
-      body: Padding(
-      padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
-      child: GridView.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
-        padding: const EdgeInsets.all(4),
-        childAspectRatio: 0.72,
-        children: objects.map<Widget>((Object p) {
-          return Menu(object: p);
-        }).toList(),
+        backgroundColor: Color.fromARGB(255, 0, 191, 255),
+        elevation: 5,
       ),
-    ),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+        child: GridView.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          padding: const EdgeInsets.all(4),
+          childAspectRatio: 0.72,
+          children: objects.map<Widget>((Object p) {
+            return Menu(object: p);
+          }).toList(),
+        ),
+      ),
     );
   }
 }
@@ -84,23 +86,23 @@ class Entertainment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Entertaiment'),
-          backgroundColor: Color.fromARGB(255, 0, 191, 255),
-          elevation: 5,
-        ),
-      body: Padding(
-      padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
-      child: GridView.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
-        padding: const EdgeInsets.all(4),
-        childAspectRatio: 0.72,
-        children: objects.map<Widget>((Object p) {
-          return Menu(object: p);
-        }).toList(),
+        title: const Text('Entertaiment'),
+        backgroundColor: Color.fromARGB(255, 0, 191, 255),
+        elevation: 5,
       ),
-    ),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+        child: GridView.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          padding: const EdgeInsets.all(4),
+          childAspectRatio: 0.72,
+          children: objects.map<Widget>((Object p) {
+            return Menu(object: p);
+          }).toList(),
+        ),
+      ),
     );
   }
 }
@@ -135,23 +137,23 @@ class Lodging extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Lodging'),
-          backgroundColor: Color.fromARGB(255, 0, 191, 255),
-          elevation: 5,
-        ),
-      body: Padding(
-      padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
-      child: GridView.count(
-        crossAxisCount: 2,
-        mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
-        padding: const EdgeInsets.all(4),
-        childAspectRatio: 0.72,
-        children: objects.map<Widget>((Object p) {
-          return Menu(object: p);
-        }).toList(),
+        title: const Text('Lodging'),
+        backgroundColor: Color.fromARGB(255, 0, 191, 255),
+        elevation: 5,
       ),
-    ),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 5, left: 5, right: 5),
+        child: GridView.count(
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          padding: const EdgeInsets.all(4),
+          childAspectRatio: 0.72,
+          children: objects.map<Widget>((Object p) {
+            return Menu(object: p);
+          }).toList(),
+        ),
+      ),
     );
   }
 }
