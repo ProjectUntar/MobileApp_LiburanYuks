@@ -1,17 +1,17 @@
 class Meal {
   late final int id;
 
-  late final String imageType;
+  String imageType = "";
 
-  late final String title;
+  String title = "";
 
   late final int readyInMinutes;
 
   late final int servings;
 
-  late final String sourceUrl;
+  String sourceUrl = "";
 
-  late final String imageUrl;
+  final String imageUrl = "";
 
   Meal(
       {required this.id,
